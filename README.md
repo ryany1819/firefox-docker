@@ -1,13 +1,13 @@
 # Dockerized Firefox with Functional Audio
 
-Run Firefox inside an isolated [Docker](http://www.docker.io) container. Exporting a GUI app running in a Docker container is not new. There has been a few solutions available. However, while similar approaches require VNC installed in the host, this solution does not require it (in Linux environment). After docker build, the Docker image has Firefox installed. This solution provides functional audio redirection -- thanks to PulseAudio. This project was derived from Terje Laren's [docker-spotify-pulseaudio] project (https://github.com/terlar/docker-spotify-pulseaudio) and received a few improvements in version upgrade, bug fixes, and code simplication. However, this solution does not address getting/saving the configuration of Firefox in the user home, everything stay inside the docker container.
+Run Firefox inside an isolated [Docker](http://www.docker.io) container. Exporting a GUI app running in a Docker container is not new. There has been a few solutions available. However, while similar approaches require VNC installed in the host, this solution does not require it (in Linux environment). After docker build, the Docker image has Firefox installed. This solution provides functional audio redirection -- thanks to PulseAudio. This project was derived from Terje Laren's [docker-spotify-pulseaudio](https://github.com/terlar/docker-spotify-pulseaudio) project and received a few improvements in version upgrade, bug fixes, and code simplication. However, this solution does not address getting/saving the configuration of Firefox in the user home, everything stay inside the docker container.
 
 
 ## Instructions
 
-1. Download the source"
+1. Download the source:
   ```sh
-	  git clone https://github.com/ryany1819/firefox-docker.git && cd firefox-docker
+git clone https://github.com/ryany1819/firefox-docker.git && cd firefox-docker
   ```
 
 2. Build the image:
@@ -22,5 +22,5 @@ Run Firefox inside an isolated [Docker](http://www.docker.io) container. Exporti
   ./run.sh
   ```
 
-4. The Firefox GUI will be redirect to host just like an installed app being launched (Linux env).
+4. The Firefox GUI will be redirect to the host and behaves just like a local app being launched (Linux host).
 
